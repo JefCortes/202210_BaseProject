@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Vivero el Otoño</h2>
+  <hr>
+  <hr>
+  <div class="row">
+    <table class="table">
+      <thead class="thead-dark table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre Común </th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let planta of plantas">
+          <th scope="row">{{ planta.id }}</th>
+          <td>{{ planta.nombre_comun }}</td>
+          <td>{{ planta.tipo }}</td>
+          <td>{{ planta.clima }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
