@@ -1,7 +1,16 @@
 <testExecutions version="1">
+  <file path="src/app/planta/planta.service.spec.ts">
+    <testCase name="Service: Planta should ..." duration="32"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+    <testCase name="AppComponent should have as title 'base-project'" duration="53"/>
+    <testCase name="AppComponent should create the app" duration="9"/>
+  </file>
+  <file path="src/app/planta/planta-listado/planta-listado.component.spec.ts">
+    <testCase name="PlantaListadoComponent should have an TD element with nombre_comun in row 3" duration="71"/>
+    <testCase name="PlantaListadoComponent should have an TH element as header" duration="15"/>
+    <testCase name="PlantaListadoComponent should create" duration="27"/>
+    <testCase name="PlantaListadoComponent should have an TD element with nombre_comun in row 2" duration="19"/>
+    <testCase name="PlantaListadoComponent should have an TD element with nombre_comun in row 1" duration="30"/>
   </file>
 </testExecutions>

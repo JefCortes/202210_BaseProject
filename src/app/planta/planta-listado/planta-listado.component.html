@@ -1,25 +1,32 @@
 <div class="container">
   <h2>Vivero el Otoño</h2>
   <hr>
+  <img src="https://user-images.githubusercontent.com/2495279/166118417-d50cc137-203c-4219-a3e6-f590b4d26034.png"  class="img-fluid" alt="">
   <hr>
   <div class="row">
+    <div class="col-md-8 col-lg-8">
     <table class="table">
       <thead class="thead-dark table-dark">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Nombre Común </th>
+          <th scope="col">Nombre Común</th>
           <th scope="col">Tipo</th>
           <th scope="col">Clima</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let planta of plantas">
+        <tr *ngFor="let planta of plantas; index as i;">
           <th scope="row">{{ planta.id }}</th>
           <td>{{ planta.nombre_comun }}</td>
-          <td>{{ planta.tipo }}</td>
-          <td>{{ planta.clima }}</td>
+          <td >{{ planta.tipo }}</td>
+          <td >{{ planta.clima }}</td>
+          <span *ngIf=" planta.tipo=='Interior'" hidden >{{sumar('j')}}</span>
+          <span *ngIf=" planta.tipo=='Exterior'" hidden >{{sumar('k')}}</span>
         </tr>
       </tbody>
     </table>
+    <p>Total plantas de interior: {{j}}<br>
+     Total plantas de exterior: {{k}}</p>
   </div>
+</div>
 </div>
